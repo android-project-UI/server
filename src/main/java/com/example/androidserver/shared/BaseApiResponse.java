@@ -1,10 +1,13 @@
 package com.example.androidserver.shared;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Date;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 @Builder
 public class BaseApiResponse {
 
