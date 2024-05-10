@@ -1,27 +1,17 @@
-package com.example.androidserver.ws.model.entity;
+package com.example.androidserver.ws.model.response;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.example.androidserver.ws.model.entity.CourseEntity;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
-@Entity
-@Table
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class MasterEntity {
-
-    @Id
-    private Long id;
+@Setter
+@Getter
+@Builder
+public class MasterResponse {
 
     private String publicId;
 
@@ -39,6 +29,5 @@ public class MasterEntity {
     private byte[] image;
 
     private List<Integer> schedule;
-
 
 }
